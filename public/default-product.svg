@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2e1a5e" />
+      <stop offset="50%" stop-color="#1d123c" />
+      <stop offset="100%" stop-color="#110b24" />
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="130" y1="120" x2="270" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="230" y1="115" x2="285" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" />
+  <circle cx="200" cy="190" r="170" fill="url(#glowGrad)" />
+
+  <!-- Subtle Grid / Rings -->
+  <circle cx="200" cy="200" r="125" stroke="#a78bfa" stroke-opacity="0.1" stroke-width="1.5" stroke-dasharray="6 6" />
+  <circle cx="200" cy="200" r="92" stroke="#a78bfa" stroke-opacity="0.14" stroke-width="1.5" />
+
+  <!-- Rounded Container -->
+  <rect x="128" y="128" width="144" height="144" rx="36" fill="#231648" stroke="#8b5cf6" stroke-opacity="0.4" stroke-width="2" />
+
+  <!-- Shopping Bag / Digital Package Icon -->
+  <path d="M164 182H236L230 242C229.1 250.5 222 257 213.4 257H186.6C178 257 170.9 250.5 170 242L164 182Z" fill="url(#cardGrad)" fill-opacity="0.9" />
+  <path d="M182 182V170C182 160.059 190.059 152 200 152C209.941 152 218 160.059 218 170V182" stroke="#e9d5ff" stroke-width="6" stroke-linecap="round" />
+  <path d="M186 206L196 216L216 196" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Sparkle Badge -->
+  <circle cx="258" cy="142" r="20" fill="url(#accentGrad)" />
+  <path d="M258 131L261 139L269 142L261 145L258 153L255 145L247 142L255 139L258 131Z" fill="#ffffff" />
+</svg>

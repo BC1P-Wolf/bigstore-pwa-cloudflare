@@ -1,0 +1,23 @@
+# Cloudflare Pages Headers
+
+# Headers globais de segurança
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Arquivos estáticos com hash no nome (JavaScript e CSS empacotados pelo build)
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Service Worker da PWA: SEMPRE fresco para permitir atualizações instantâneas no celular
+/service-worker.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Manifesto PWA: sem cache para refletir mudanças de nome/ícones
+/manifest.json
+  Cache-Control: no-cache, must-revalidate
+
+# HTML principal da SPA: sempre revalidado
+/index.html
+  Cache-Control: no-cache, must-revalidate

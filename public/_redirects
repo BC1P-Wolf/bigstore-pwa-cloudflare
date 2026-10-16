@@ -1,0 +1,4 @@
+# Cloudflare Pages SPA Redirects
+# Garante que qualquer rota virtual do React Router (/carrinho, /pedidos, /perfil, etc.)
+# seja entregue via index.html com status 200 (evita erro 404 em recarregamento de página/F5)
+/*    /index.html   200
